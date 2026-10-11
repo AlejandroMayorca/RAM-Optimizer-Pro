@@ -1,0 +1,37 @@
+name: Reportar un error / Bug report
+description: Algo no funciona como debería / Something isn't working
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: ¿Qué pasó? / What happened?
+      placeholder: Describe el problema y los pasos para reproducirlo. / Describe the problem and how to reproduce it.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión de RAM Optimizer Pro / App version
+      placeholder: "3.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows
+      options:
+        - Windows 11
+        - Windows 10
+    validations:
+      required: true
+  - type: input
+    id: ram
+    attributes:
+      label: Memoria RAM instalada / Installed RAM
+      placeholder: "16 GB"
+  - type: textarea
+    id: log
+    attributes:
+      label: Registro de actividad / Activity log
+      description: Ajustes → Mantenimiento → Abrir carpeta, adjunta app.log / Settings → Maintenance → Open folder, attach app.log
