@@ -58,7 +58,7 @@ Se instala en segundos, arranca solo con Windows y trabaja en silencio desde la 
 Si ya tenías una versión anterior, el instalador la actualiza y conserva tus ajustes.
 
 > **¿Windows muestra "Windows protegió tu PC"?**
-> Es normal en programas nuevos de desarrolladores independientes que todavía no tienen firma digital de pago. Haz clic en **Más información → Ejecutar de todas formas**. Puedes comprobar el archivo con el código SHA-256 publicado en cada versión o analizarlo en [VirusTotal](https://www.virustotal.com).
+> Es normal en programas nuevos de desarrolladores independientes que todavía no tienen firma digital de pago. Haz clic en **Más información → Ejecutar de todas formas**. Puedes comprobar el archivo con el código SHA-256 publicado en cada versión o ver su [análisis en VirusTotal](https://www.virustotal.com/gui/file/2ff0c9e875477ca8a5f9c49f3c3b087de0dda9e66504a86dc3bb6ded467ffb78).
 
 ### Requisitos
 

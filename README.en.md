@@ -60,7 +60,7 @@ It installs in seconds, starts with Windows and works quietly from the system tr
 If you already have an older version, the installer upgrades it and keeps your settings.
 
 > **Seeing "Windows protected your PC"?**
-> This is normal for new software from independent developers without a paid code-signing certificate. Click **More info → Run anyway**. You can verify the file against the SHA-256 checksum published with each release, or scan it on [VirusTotal](https://www.virustotal.com).
+> This is normal for new software from independent developers without a paid code-signing certificate. Click **More info → Run anyway**. You can verify the file against the SHA-256 checksum published with each release, or check its [VirusTotal scan](https://www.virustotal.com/gui/file/2ff0c9e875477ca8a5f9c49f3c3b087de0dda9e66504a86dc3bb6ded467ffb78).
 
 ### Requirements
 
