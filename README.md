@@ -1,145 +1,100 @@
+<div align="center">
+
+<img src="assets/icon.png" width="120" alt="RAM Optimizer Pro">
+
 # RAM Optimizer Pro
 
-[🇺🇸 English](#english) | [🇪🇸 Español](#español)
+**Libera memoria RAM automáticamente y mantén Windows rápido, sin que tengas que pensar en ello.**
+
+[![Última versión](https://img.shields.io/github/v/release/AlejandroMayorca/RAM-Optimizer-Pro?label=versi%C3%B3n&color=4FE0C2&style=for-the-badge)](https://github.com/AlejandroMayorca/RAM-Optimizer-Pro/releases/latest)
+[![Descargas](https://img.shields.io/github/downloads/AlejandroMayorca/RAM-Optimizer-Pro/total?label=descargas&color=0E9F8A&style=for-the-badge)](https://github.com/AlejandroMayorca/RAM-Optimizer-Pro/releases)
+![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0E131D?style=for-the-badge&logo=windows)
+
+### [⬇️ Descargar para Windows](https://github.com/AlejandroMayorca/RAM-Optimizer-Pro/releases/latest)
+
+Gratis · Sin anuncios · Sin conexión a internet · En español
+
+**Español** · [English](README.en.md)
+
+<img src="docs/screenshots/panel.png" width="860" alt="Panel principal de RAM Optimizer Pro">
+
+</div>
 
 ---
 
-<a name="english"></a>
-## 🇺🇸 English
+## ¿Qué hace?
 
-> [!TIP]
-> **🚀 [DOWNLOAD DIRECT INSTALLER (ZIP)](RAMOptimizerPro_Installer.zip)**  
-> *Click to download the professional installer directly. No coding required.*
+Con el tiempo, Windows y las aplicaciones abiertas acumulan memoria que no están usando: pestañas del navegador en segundo plano, juegos que ya cerraste, caché de archivos antiguos. **RAM Optimizer Pro** vigila tu memoria en todo momento y, cuando el uso se dispara, la libera de forma segura para que tus programas y juegos vuelvan a tener espacio.
 
-**RAM Optimizer Pro** is a lightweight, professional-grade system utility designed to monitor and optimize memory usage on Windows systems. Built with modern Python technologies, it provides real-time monitoring, intelligent auto-cleaning, and deep system optimization capabilities.
+Se instala en segundos, arranca solo con Windows y trabaja en silencio desde la bandeja del sistema.
 
-**Created by zPcho**
+## Características
 
-### 🚀 Key Features
+- **Panel en tiempo real** — uso de RAM, memoria disponible, caché del sistema y una gráfica de los últimos 5 minutos.
+- **Limpieza automática inteligente** — actúa solo cuando el uso supera el umbral que tú elijas de forma sostenida, y espera más entre limpiezas cuando no hacen falta.
+- **Tres niveles de limpieza**
+  - **Rápida:** recorta la memoria de las aplicaciones en segundo plano.
+  - **Equilibrada** *(recomendada)*: además vacía la memoria modificada y la caché de baja prioridad.
+  - **Profunda:** libera toda la caché del sistema y de archivos.
+- **Limpieza programada** — cada 15 min, 30 min, 1 h, 2 h o 4 h.
+- **Protege lo que estás usando** — nunca toca la ventana activa (tu juego, tu editor, tu videollamada) ni los procesos críticos de Windows.
+- **Gestor de procesos** — mira qué consume más memoria, agrupa por aplicación, libera o excluye con un clic.
+- **Inicia con Windows sin avisos** — arranca minimizado al encender el PC, sin ventanas de UAC.
+- **Bandeja del sistema** — el porcentaje de RAM en vivo junto al reloj, menú rápido y notificaciones.
+- **Historial** — cuánta memoria se recuperó, cuándo y cómo.
+- **Tema oscuro, claro o automático.**
 
-*   **Real-Time Monitoring**: Live dashboard showing RAM usage, total/used/free memory, and system status.
-*   **Intelligent Auto-Clean**: Automatically optimizes memory when usage exceeds a user-defined threshold (default 80%) with smart cooldowns to prevent system thrashing.
-*   **Deep Cleaning Technology**:
-    *   **Working Set Trimming**: Safely reduces memory footprint of idle applications.
-    *   **Standby List Purging**: Clears Windows file cache (Standby List) to free up "cached" memory often locked by the system (Requires Admin).
-*   **Process Manager**: View top memory-consuming processes with color-coded status indicators (Blue for System, Red for High Usage).
-*   **System Tray Integration**: Minimized mode with background monitoring and quick access via tray icon.
-*   **History Log**: Tracks all optimization events and memory recovered.
-*   **Modern UI**: Sleek, dark-themed interface built with CustomTkinter.
+<div align="center">
+<img src="docs/screenshots/procesos.png" width="420" alt="Gestor de procesos">
+<img src="docs/screenshots/ajustes.png" width="420" alt="Ajustes">
+</div>
 
-### 🛠️ Technical Stack
+## Instalación
 
-*   **Language**: Python 3.10+
-*   **GUI Framework**: CustomTkinter (Modernized Tkinter wrapper)
-*   **System API**: `ctypes` & `win32api` for direct Windows memory management (NtSetSystemInformation).
-*   **Monitoring**: `psutil` for cross-platform process and system monitoring.
-*   **Persistence**: JSON-based configuration management.
+1. Descarga **`RAMOptimizerPro-Setup-3.0.0.exe`** desde [Releases](https://github.com/AlejandroMayorca/RAM-Optimizer-Pro/releases/latest).
+2. Ábrelo y acepta el permiso de administrador.
+3. Pulsa **Comenzar → Siguiente → Instalar**. ¡Listo!
 
-### 📦 Installation
+Si ya tenías una versión anterior, el instalador la actualiza y conserva tus ajustes.
 
-#### Prerequisites
+> **¿Windows muestra "Windows protegió tu PC"?**
+> Es normal en programas nuevos de desarrolladores independientes que todavía no tienen firma digital de pago. Haz clic en **Más información → Ejecutar de todas formas**. Puedes comprobar el archivo con el código SHA-256 publicado en cada versión o analizarlo en [VirusTotal](https://www.virustotal.com).
 
-*   Python 3.10 or higher
-*   Windows 10/11 (Required for memory management APIs)
+### Requisitos
 
-#### Setup
+- Windows 10 u 11 de 64 bits
+- 100 MB de espacio libre
+- Permisos de administrador para instalar
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/ram-optimizer-pro.git
-    cd ram-optimizer-pro
-    ```
+### Desinstalar
 
-2.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+Desde **Configuración → Aplicaciones → RAM Optimizer Pro → Desinstalar**, o desde el acceso del menú Inicio. Se eliminan el programa, los accesos directos y el inicio automático.
 
-3.  Run the application (Administrator privileges recommended for full features):
-    ```bash
-    python main.py
-    ```
+## Preguntas frecuentes
 
-### ⚙️ Building Executable
+**¿Es seguro?**
+Sí. Usa únicamente funciones oficiales de Windows (`EmptyWorkingSet`, `NtSetSystemInformation`, `SetSystemFileCacheSize`), las mismas que usan herramientas de Microsoft como RAMMap. Nunca cierra programas ni toca procesos críticos del sistema.
 
-To compile the application into a standalone `.exe`, use PyInstaller:
+**¿Mis programas se cerrarán?**
+No. Ningún programa se cierra. Solo se libera memoria que no se está usando en ese momento.
 
-```bash
-pyinstaller --noconsole --onefile --icon=assets/app.ico --name="RAMOptimizerPro" --uac-admin --clean main.py
-```
+**¿Recopila datos?**
+No. No se conecta a internet. La configuración y el historial se guardan solo en tu PC, en `%APPDATA%\RAMOptimizerPro`.
 
----
+**¿Sirve para juegos?**
+Sí, sobre todo en equipos con 8 GB o 16 GB de RAM. La opción *Proteger la aplicación activa* evita tocar el juego que estás jugando.
 
-<a name="español"></a>
-## 🇪🇸 Español
+**¿Por qué pide permisos de administrador?**
+Liberar la caché del sistema solo es posible con privilegios elevados. Se piden una única vez al instalar; después el programa se abre sin avisos.
 
-> [!TIP]
-> **🚀 [DESCARGAR INSTALADOR DIRECTO (ZIP)](RAMOptimizerPro_Installer.zip)**  
-> *Clic para descargar el instalador profesional directamente. Sin complicaciones.*
+## Comentarios y errores
 
-**RAM Optimizer Pro** es una utilidad de sistema ligera y profesional diseñada para monitorear y optimizar el uso de memoria en sistemas Windows. Construida con tecnologías modernas de Python, ofrece monitoreo en tiempo real, limpieza automática inteligente y capacidades de optimización profunda del sistema.
-
-**Creado por zPcho**
-
-### 🚀 Características Principales
-
-*   **Monitoreo en Tiempo Real**: Panel de control en vivo que muestra el uso de RAM, memoria total/usada/libre y estado del sistema.
-*   **Limpieza Automática Inteligente**: Optimiza automáticamente la memoria cuando el uso supera un umbral definido por el usuario (predeterminado 80%) con tiempos de espera inteligentes para evitar sobrecarga del sistema.
-*   **Tecnología de Limpieza Profunda**:
-    *   **Recorte de Working Set**: Reduce de forma segura la huella de memoria de aplicaciones inactivas.
-    *   **Purgado de Standby List**: Borra la caché de archivos de Windows (Lista de Espera) para liberar memoria "en caché" a menudo bloqueada por el sistema (Requiere Administrador).
-*   **Gestor de Procesos**: Visualiza los procesos que más memoria consumen con indicadores de estado codificados por colores (Azul para Sistema, Rojo para Uso Alto).
-*   **Integración en Bandeja del Sistema**: Modo minimizado con monitoreo en segundo plano y acceso rápido mediante icono en la bandeja.
-*   **Historial de Eventos**: Registra todos los eventos de optimización y la memoria recuperada.
-*   **UI Moderna**: Interfaz elegante y oscura construida con CustomTkinter.
-
-### 🛠️ Stack Técnico
-
-*   **Lenguaje**: Python 3.10+
-*   **Framework GUI**: CustomTkinter (Wrapper modernizado de Tkinter)
-*   **API del Sistema**: `ctypes` y `win32api` para gestión directa de memoria en Windows (NtSetSystemInformation).
-*   **Monitoreo**: `psutil` para monitoreo de procesos y sistema multiplataforma.
-*   **Persistencia**: Gestión de configuración basada en JSON.
-
-### 📦 Instalación
-
-#### Requisitos Previos
-
-*   Python 3.10 o superior
-*   Windows 10/11 (Requerido para APIs de gestión de memoria)
-
-#### Configuración
-
-1.  Clona el repositorio:
-    ```bash
-    git clone https://github.com/tuusuario/ram-optimizer-pro.git
-    cd ram-optimizer-pro
-    ```
-
-2.  Instala las dependencias:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  Ejecuta la aplicación (Se recomiendan privilegios de Administrador para todas las funciones):
-    ```bash
-    python main.py
-    ```
-
-### ⚙️ Compilación del Ejecutable
-
-Para compilar la aplicación en un `.exe` independiente, usa PyInstaller:
-
-```bash
-pyinstaller --noconsole --onefile --icon=assets/app.ico --name="RAMOptimizerPro" --uac-admin --clean main.py
-```
+¿Encontraste un problema o tienes una idea? [Abre un reporte aquí](https://github.com/AlejandroMayorca/RAM-Optimizer-Pro/issues/new/choose). Si te gusta el programa, deja una ⭐ al repositorio: ayuda a que más personas lo encuentren.
 
 ---
 
-## 📝 License / Licencia
+<div align="center">
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+Creado por **zPcho** · © 2024-2026
 
----
-*Developed with ❤️ by zPcho*
+</div>
